@@ -1,51 +1,64 @@
 /* eslint-disable no-unused-vars */
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 import { CiSearch } from "react-icons/ci";
 import { HiOutlineShoppingBag } from "react-icons/hi2";
 import { assets } from "../../assets/assests/assests";
+import { StoreContext } from "../../context/StoreContext";
 
-const Navbar = () => {
+const Navbar = ({ setShowLogin }) => {
   const [menu, setMenu] = useState("home");
+
+  const { getTotalCartAmount } = useContext(StoreContext);
+
   return (
     <div className="navbar">
-      <img className="logo" src={assets.logo} alt="" />
+      <Link to="/">
+        <img className="logo" src={assets.logo} alt="" />
+      </Link>
       <ul className="nav-menu">
-        <li
+        <Link
+          to="/"
           className={menu === "home" ? "active" : ""}
           onClick={() => setMenu("home")}
         >
           home
-        </li>
-        <li
+        </Link>
+        <a
+          href="#explore-menu"
           className={menu === "menu" ? "active" : ""}
           onClick={() => setMenu("menu")}
         >
           menu
-        </li>
-        <li
+        </a>
+        <a
+          href="#"
           className={menu === "mobile-app" ? "active" : ""}
           onClick={() => setMenu("mobile-app")}
         >
           mobile-app
-        </li>
-        <li
+        </a>
+        <a
+          href="#footer"
           className={menu === "contact-us" ? "active" : ""}
           onClick={() => setMenu("contact-us")}
         >
           contact-us
-        </li>
+        </a>
       </ul>
       <div className="navbar-right">
         <div className="search-icon">
           <CiSearch />
         </div>
         <div className="shopping-cart">
-          <HiOutlineShoppingBag />
-          <div className="dot"></div>
+          <Link to="/cart">
+            <HiOutlineShoppingBag />
+          </Link>
+          <div className={getTotalCartAmount() === 0 ? "" : "dot"}></div>
         </div>
-        <button>sign up</button>
+        <button onClick={() => setShowLogin(true)}>sign up</button>
       </div>
     </div>
   );
