@@ -3,6 +3,8 @@ import startRating from "./starrating.jfif";
 import add from "./add.png";
 import minus from "./minus.png";
 import logo from "./logo.png";
+import search from "./search.png";
+import shopping_bag from "./shopping_cart.png";
 // RICE MENU
 import jollof_spag from "./jollof-spag.avif";
 import jollof_menu from "./jollof.jpg";
@@ -51,6 +53,8 @@ import Roasted_chicken from "./Roaste-chicken.jpg";
 import smoky_chicken from "./smoky-chicken.avif";
 
 export const assets = {
+  search,
+  shopping_bag,
   cakes_menu,
   croissants,
   strawberry_pastry_cake,

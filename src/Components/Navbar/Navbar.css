@@ -29,6 +29,9 @@
   font-size: 18px;
   cursor: pointer;
 }
+.navbar-right img {
+  width: 34px;
+}
 .navbar .shopping-cart {
   position: relative;
 }
