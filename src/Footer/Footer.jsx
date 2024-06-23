@@ -1,9 +1,9 @@
 import React from "react";
 import "./Footer.css";
 import { assets } from "../assets/assests/assests";
-import { IoLogoFacebook } from "react-icons/io";
-import { FaLinkedin } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+// import { IoLogoFacebook } from "react-icons/io";
+// import { FaLinkedin } from "react-icons/fa";
+// import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -17,11 +17,11 @@ const Footer = () => {
             amet aperiam placeat. Amet hic sequi voluptatem repellat suscipit
             exercitationem earum voluptate maxime?
           </p>
-          <div className="footer-social-icons">
+{/*           <div className="footer-social-icons">
             <IoLogoFacebook className="icon" />
             <FaLinkedin className="icon" />
             <FaXTwitter className="icon" />
-          </div>
+          </div> */}
         </div>
         <div className="footer-content-center">
           <h2>COMPANY</h2>
