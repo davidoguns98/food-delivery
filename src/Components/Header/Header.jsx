@@ -12,7 +12,7 @@ const Header = () => {
           odio blanditiis enim aspernatur quas voluptatem amet ab, consectetur
           corrupti natus temporibus?
         </p>
-        <button>View menu</button>
+        <a href="#explore-menu">View menu</a>
       </div>
     </div>
   );

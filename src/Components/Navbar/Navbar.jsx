@@ -50,11 +50,11 @@ const Navbar = ({ setShowLogin }) => {
       </ul>
       <div className="navbar-right">
         <div className="search-icon">
-          <img src={assets.search} alt="" />
+          <CiSearch />
         </div>
         <div className="shopping-cart">
           <Link to="/cart">
-            <img src={assets.shopping_bag} alt="" />
+            <HiOutlineShoppingBag />
           </Link>
           <div className={getTotalCartAmount() === 0 ? "" : "dot"}></div>
         </div>
