@@ -4,6 +4,21 @@
   align-items: center;
   justify-content: space-between;
 }
+
+.mobile-view {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hamburger-icon {
+  width: 42px;
+}
+.logo-mobile {
+  width: 44px;
+  border: none;
+}
 .logo {
   width: 74px;
   border: none;

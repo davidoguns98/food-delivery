@@ -5,6 +5,9 @@ import minus from "./minus.png";
 import logo from "./logo.png";
 import search from "./search.png";
 import shopping_bag from "./shopping_cart.png";
+import cartIcon from "./cartIcon.png";
+import searchIcon from "./searchIcon.jfif";
+import hamburgerIcon from "./hamburger.png";
 // RICE MENU
 import jollof_spag from "./jollof-spag.avif";
 import jollof_menu from "./jollof.jpg";
@@ -65,14 +68,17 @@ export const assets = {
   chocolate_cupcake,
   chicken_pie,
   chicken_chips,
+  cartIcon,
   asun_jollof,
   chicken_burger,
   bg_2,
   jollof_spag,
   jollof_menu,
   party_jollof,
+  hamburgerIcon,
   sandwich,
   samusa,
+  searchIcon,
   spag_stew,
   chips,
   crayfish_spag,
