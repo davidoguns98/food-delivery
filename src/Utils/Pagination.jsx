@@ -1,8 +1,9 @@
+/* eslint-disable react/prop-types */
 import React, { useState } from "react";
 
 const PaginatedList = ({ items }) => {
   const [currentPage, setCurrentPage] = useState(1); // Track current page
-  const itemsPerPage = 9; // Number of items per page
+  const itemsPerPage = 8; // Number of items per page
 
   // Calculate the starting and ending index of items to show for the current page
   const indexOfLastItem = currentPage * itemsPerPage;
@@ -32,7 +33,7 @@ const PaginatedList = ({ items }) => {
         ))}
       </div>
 
-      {/* Pagination controls */}
+      {/* Pagination controls
       <div>
         <button onClick={prevPage} disabled={currentPage === 1}>
           Previous
@@ -45,6 +46,7 @@ const PaginatedList = ({ items }) => {
           Next
         </button>
       </div>
+       */}
     </div>
   );
 };
