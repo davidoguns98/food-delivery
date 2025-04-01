@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import { assets } from "../assets/assests/assests";
+import { Link } from "react-router-dom";
 // import { IoLogoFacebook } from "react-icons/io";
 // import { FaLinkedin } from "react-icons/fa";
 // import { FaXTwitter } from "react-icons/fa6";
@@ -10,14 +11,14 @@ const Footer = () => {
     <div className="footer" id="footer">
       <div className="footer-content">
         <div className="footer-content-left">
-          <img src={assets.logo} alt="" />
+          <img className="footer-logo" src={assets.logo} alt="" />
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
             tenetur doloremque maiores ipsum hic provident fugiat distinctio
             amet aperiam placeat. Amet hic sequi voluptatem repellat suscipit
             exercitationem earum voluptate maxime?
           </p>
-{/*           <div className="footer-social-icons">
+          {/*           <div className="footer-social-icons">
             <IoLogoFacebook className="icon" />
             <FaLinkedin className="icon" />
             <FaXTwitter className="icon" />
@@ -25,12 +26,11 @@ const Footer = () => {
         </div>
         <div className="footer-content-center">
           <h2>COMPANY</h2>
-          <ul>
-            <li>Home</li>
-            <li>About us</li>
-            <li>Delivery</li>
-            <li>Privacy Policy</li>
-          </ul>
+
+          <Link to="/">Home</Link>
+          <Link to="/">About us</Link>
+          <Link to="/">Delivery</Link>
+          <Link to="/">Privacy Policy</Link>
         </div>
         <div className="footer-content-right">
           <h2>Get In Touch</h2>

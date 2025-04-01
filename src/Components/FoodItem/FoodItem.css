@@ -66,11 +66,19 @@
   border: 2px solid tomato;
 }
 /* media queries */
-@media (max-width: 510px) {
+@media (max-width: 699px) {
+  .food-display-list {
+    grid-template-columns: 1fr; /* Show one item per row */
+  }
   .food-item {
-    width: 70%;
-    height: 93%;
-    margin: auto auto;
-    padding-bottom: 10px;
+    width: 88%;
+    padding: 15px;
+    font-size: 16px;
+    text-align: center;
+  }
+  .show-more {
+    width: 100%;
+    text-align: center;
+    margin: 15px 0;
   }
 }
